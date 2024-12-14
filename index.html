@@ -11,11 +11,20 @@
         <h1>Kibera UNseen</h1>
         <nav>
             <ul>
-                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#services">Our Services</a>
+                     <ul class="dropdown">
+                         <li><a href="#photography-services">Photography Services</a></li>
+                         <li><a href="#workshops">Workshops and Training</a></li>
+                         <li><a href="#event-hosting">Event Hosting</a></li>
+                         <li><a href="#art-sales">E-commerce for Art Sales</a></li>
+                     </ul>
+                 </li>
                 <li><a href="#stories">Stories</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#events">Events</a></li>
+                <li><a href="#store">Store</a></li>
             </ul>
         </nav>
     </header>
@@ -27,15 +36,34 @@
         </div>
     </section>
     <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Learn more about our mission and team.</p>
+        </section>
         <section id="gallery">
             <h2>Gallery</h2>
             <div class="gallery-grid">
                 <p>Coming soon: A showcase of our photography.</p>
             </div>
         </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Learn more about our mission and team.</p>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service" id="photography-services">
+                <h3>Photography Services</h3>
+                <p>We offer professional photography services to capture the essence of your events and moments.</p>
+            </div>
+            <div class="service" id="workshops">
+                <h3>Workshops and Training</h3>
+                <p>Join our workshops to learn photography skills and storytelling techniques.</p>
+            </div>
+            <div class="service" id="event-hosting">
+                <h3>Event Hosting</h3>
+                <p>We host events and exhibitions to showcase local talent and culture.</p>
+            </div>
+            <div class="service" id="art-sales">
+                <h3>E-commerce for Art Sales</h3>
+                <p>Purchase unique artworks directly from our online store.</p>
+            </div>
         </section>
         <section id="stories">
             <h2>Stories</h2>
@@ -43,7 +71,15 @@
         </section>
         <section id="contact">
             <h2>Contact Us</h2>
-            <p>Get in touch with us!</p>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
         <section id="events">
             <h2>Upcoming Events</h2>
@@ -66,6 +102,30 @@
                     <input type="number" id="tickets" name="tickets" min="1" max="10" required>
                     <button type="submit">Buy Tickets</button>
                 </form>
+            </div>
+        </section>
+        <section id="store">
+            <h2>Art Store</h2>
+            <div class="product">
+                <img src="path/to/art1.jpg" alt="Art 1" />
+                <h3>Art Title 1</h3>
+                <p>Description of Art 1.</p>
+                <p>Price: $100</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="path/to/art2.jpg" alt="Art 2" />
+                <h3>Art Title 2</h3>
+                <p>Description of Art 2.</p>
+                <p>Price: $150</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="path/to/art3.jpg" alt="Art 3" />
+                <h3>Art Title 3</h3>
+                <p>Description of Art 3.</p>
+                <p>Price: $200</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
         </section>
     </main>
