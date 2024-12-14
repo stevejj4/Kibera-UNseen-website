@@ -23,6 +23,7 @@ To run the website locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/stevejj4/Kibera-UNseen-website.git
+<<<<<<< HEAD
    ```
 
 2. Navigate to the project directory:
@@ -39,3 +40,5 @@ Contributions are welcome! If you have suggestions for improvements or features,
 ## License
 
 This project is licensed under the MIT License.
+=======
+>>>>>>> ce3f202212619c41b340b66cb29eb37acf754208
